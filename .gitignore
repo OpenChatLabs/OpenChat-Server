@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+.eggs/
+dist/
+build/
+wheels/
+pip-wheel-metadata/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Environment & secrets (do not commit)
+.env
+.env.*
+!.env.example
+
+# uv / pip caches (optional tooling state)
+.python-version.backup
+
+# Testing & coverage
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+
+# Type checkers / linters (generated)
+.dmypy.json
+dmypy.json
+
+# Databases & local SQLite
+*.db
+*.sqlite
+*.sqlite3
+
+# Editors & OS
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs & temp
+*.log
+tmp/
+temp/
