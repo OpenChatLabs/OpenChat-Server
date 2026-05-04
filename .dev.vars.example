@@ -1,9 +1,0 @@
-# Local Worker env (not committed). Copy to `.dev.vars` and fill in.
-#
-# 本地数据库：仓库根目录执行 `pnpm db:start`（需已安装 Docker）。
-# 连接信息：`pnpm db:status`
-#   - Project URL → SUPABASE_URL（默认 http://127.0.0.1:54321）
-#   - Authentication Keys 里的 Publishable → SUPABASE_ANON_KEY（客户端 / anon）
-#   - Secret 为 service_role，勿写入前端或示例文件；仅在服务端 Worker 需要特权时再单独配置
-SUPABASE_URL=http://127.0.0.1:54321
-SUPABASE_ANON_KEY=

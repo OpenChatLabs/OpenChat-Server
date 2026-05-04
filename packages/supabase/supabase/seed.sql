@@ -1,1 +1,0 @@
--- Local dev seed (optional). Add INSERTs or call functions after migrations.
