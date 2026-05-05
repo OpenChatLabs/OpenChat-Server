@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 import uvicorn
+from base import logo
 app = FastAPI()
 
 
@@ -14,7 +15,7 @@ def read_item(item_id: int, q: str | None = None):
 
 
 if __name__ == "__main__":
-
+    logo()
     uvicorn.run(
         "main:app",
         host="127.0.0.1",
