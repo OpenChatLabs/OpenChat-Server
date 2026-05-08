@@ -1,0 +1,14 @@
+{
+  "name": "openchat-server",
+  "private": true,
+  "packageManager": "pnpm@10.10.0",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "test": "turbo run test:unit",
+    "preview": "turbo run preview"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.4"
+  }
+}
