@@ -15,4 +15,13 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
+  server: {
+    port: 5174,
+    proxy: {
+      '^/(auth|accounts)': {
+        target: process.env.VITE_DEV_API_TARGET ?? 'http://127.0.0.1:5173',
+        changeOrigin: true,
+      },
+    },
+  },
 })

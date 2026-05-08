@@ -53,12 +53,12 @@ accountsRouter.post('/', async (c) => {
   }
 
   if (me.role === 'root') {
-    if (role !== 'admin') {
-      return c.json({ error: 'root 仅可创建管理员账号' }, 403)
+    if (role !== 'admin' && role !== 'user') {
+      return c.json({ error: 'root 仅可创建管理员或普通账号' }, 403)
     }
   } else if (me.role === 'admin') {
-    if (role !== 'user') {
-      return c.json({ error: '管理员仅可创建普通账号' }, 403)
+    if (role !== 'admin' && role !== 'user') {
+      return c.json({ error: '管理员仅可创建管理员或普通账号' }, 403)
     }
   } else {
     return c.json({ error: '无权创建账号' }, 403)
