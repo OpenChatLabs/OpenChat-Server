@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "turbo run dev",
     "build": "turbo run build",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "test": "turbo run test:unit",
     "preview": "turbo run preview",
     "db:start": "pnpm --filter @openchat-server/database db:start",
@@ -20,6 +22,11 @@
     "db:types:linked": "pnpm --filter @openchat-server/database db:types:linked"
   },
   "devDependencies": {
-    "turbo": "^2.5.4"
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.3.0",
+    "eslint-plugin-vue": "^10.9.1",
+    "globals": "^17.6.0",
+    "turbo": "^2.5.4",
+    "typescript-eslint": "^8.59.2"
   }
 }
