@@ -1,6 +1,4 @@
--- 鉴权改由 Supabase Auth；public 表仅存应用角色与展示名
-
-drop table if exists public.app_accounts;
+-- 应用侧用户资料与角色；鉴权由 Supabase Auth (auth.users)
 
 create table public.app_profiles (
   id uuid primary key references auth.users (id) on delete cascade,
