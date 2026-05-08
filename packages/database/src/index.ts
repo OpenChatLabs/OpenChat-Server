@@ -5,6 +5,7 @@ import {
 } from "@supabase/supabase-js";
 import type { Database } from "./database.types.js";
 
+export * from "./app-profiles.js";
 export type { Database };
 export type { SupabaseClient };
 

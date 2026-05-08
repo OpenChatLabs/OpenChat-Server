@@ -10,6 +10,8 @@
     "cf-typegen": "wrangler types --env-interface CloudflareBindings"
   },
   "dependencies": {
+    "@openchat-server/database": "workspace:*",
+    "dotenv": "^17.4.2",
     "hono": "^4.12.18"
   },
   "devDependencies": {

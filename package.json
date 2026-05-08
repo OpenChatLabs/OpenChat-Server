@@ -14,6 +14,7 @@
     "db:status": "pnpm --filter @openchat-server/database db:status",
     "db:reset": "pnpm --filter @openchat-server/database db:reset",
     "db:push": "pnpm --filter @openchat-server/database db:push",
+    "db:push:local": "pnpm --filter @openchat-server/database db:push:local",
     "db:pull": "pnpm --filter @openchat-server/database db:pull",
     "db:diff": "pnpm --filter @openchat-server/database db:diff",
     "db:link": "pnpm --filter @openchat-server/database db:link",
