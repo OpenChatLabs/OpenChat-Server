@@ -6,7 +6,18 @@
     "dev": "turbo run dev",
     "build": "turbo run build",
     "test": "turbo run test:unit",
-    "preview": "turbo run preview"
+    "preview": "turbo run preview",
+    "db:start": "pnpm --filter @openchat-server/database db:start",
+    "db:stop": "pnpm --filter @openchat-server/database db:stop",
+    "db:status": "pnpm --filter @openchat-server/database db:status",
+    "db:reset": "pnpm --filter @openchat-server/database db:reset",
+    "db:push": "pnpm --filter @openchat-server/database db:push",
+    "db:pull": "pnpm --filter @openchat-server/database db:pull",
+    "db:diff": "pnpm --filter @openchat-server/database db:diff",
+    "db:link": "pnpm --filter @openchat-server/database db:link",
+    "db:new-migration": "pnpm --filter @openchat-server/database db:new-migration",
+    "db:types": "pnpm --filter @openchat-server/database db:types",
+    "db:types:linked": "pnpm --filter @openchat-server/database db:types:linked"
   },
   "devDependencies": {
     "turbo": "^2.5.4"
