@@ -33,6 +33,24 @@ export type Database = {
         };
         Relationships: [];
       };
+      user_presence_nodes: {
+        Row: {
+          username: string;
+          domain: string;
+          updated_at: string;
+        };
+        Insert: {
+          username: string;
+          domain: string;
+          updated_at?: string;
+        };
+        Update: {
+          username?: string;
+          domain?: string;
+          updated_at?: string;
+        };
+        Relationships: [];
+      };
     };
     Views: Record<string, never>;
     Functions: Record<string, never>;

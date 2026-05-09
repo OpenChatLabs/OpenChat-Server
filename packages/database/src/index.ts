@@ -6,6 +6,7 @@ import {
 import type { Database } from "./database.types.js";
 
 export * from "./app-profiles.js";
+export * from "./user-presence.js";
 export type { Database };
 export type { SupabaseClient };
 

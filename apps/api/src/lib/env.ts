@@ -28,6 +28,9 @@ export function getSupabaseServiceRoleKey(): string {
 export function getSupabaseAnonKey(): string {
   return pick('SUPABASE_ANON_KEY', process.env.SUPABASE_ANON_KEY)
 }
+export function getDomain(): string {
+  return pick('DOMAIN', process.env.DOMAIN)
+}
 
 export function isRootUsername(username: string): boolean {
   try {
