@@ -1,10 +1,19 @@
 import { Hono } from 'hono'
-import { MessagePayload, MessageSignature } from '../types/message'
+import { upgradeWebSocket } from 'hono/cloudflare-workers'
 
 const messagesRouter = new Hono()
 
-messagesRouter.post('/', async (c) => {
+messagesRouter.get('/', async (c) => {
   return c.json({ message: 'Hello, world!' })
 })
+
+messagesRouter.get(
+  '/ws',
+  upgradeWebSocket(() => ({
+    onMessage() {},
+    onClose() {},
+    onError() {},
+  }))
+)
 
 export default messagesRouter
