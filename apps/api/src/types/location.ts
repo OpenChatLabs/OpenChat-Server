@@ -4,12 +4,9 @@ export type Location = {
   username?: string
   domain: string
 }
-
-/** 本机节点视角：当前 DOMAIN */
 export type MyLocation = {
   location: Location
 }
-
 /** 按用户名查询到的在线节点 */
 export type UserLocation = {
   username: string
